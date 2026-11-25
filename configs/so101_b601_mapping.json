@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "joint_signs": "1,1,-1,-1,1",
+  "joint_scales": "1,1,1,1,1",
+  "piecewise_range_map": true,
+  "deadband_deg": 0.5,
+  "joint_margin_deg": 2.0,
+  "wrist_yaw_deg": 0.0,
+  "gripper_leader_min": 0.0,
+  "gripper_leader_max": 100.0,
+  "gripper_min_deg": 0.0,
+  "gripper_max_deg": 270.0,
+  "real_gripper_invert": false,
+  "zero_leader_deg": "-6.20,-104.09,95.78,56.04,0.48",
+  "zero_b601_rad": "-0.029870,-0.001917,0.001364,-0.000115,0.010738,-0.015800"
+}

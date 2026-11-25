@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lerobot_teleoperator_so101_b601"
+version = "0.2.0"
+description = "SO-101 leader teleoperator plugin for the LeRobot v0.7.0 reBot B601-RS follower"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "SO-101 B601 adapter contributors" },
+]
+keywords = ["lerobot", "teleoperation", "robotics", "so101", "rebot", "b601"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "lerobot>=0.7.0",
+  "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.urls]
+reference = "https://github.com/Seeed-Projects/lerobot-teleoperator-rebot-arm-102"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lerobot_teleoperator_so101_b601*"]
+exclude = ["*.egg-info"]
